@@ -13,7 +13,7 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navItems = ['Home', 'Services', 'Gallery', 'Infrastructure', 'Blog', 'About', 'Pricing'];
+  const navItems = ['Home', 'Services', 'Gallery', 'Infrastructure', 'Blog', 'About'];
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId.toLowerCase());
@@ -26,7 +26,7 @@ const Navigation = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-navy-dark/95 backdrop-blur-lg shadow-lg' : 'bg-transparent'
+        isScrolled ? 'bg-white-700/95 backdrop-blur-lg shadow-lg' : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -44,7 +44,7 @@ const Navigation = () => {
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
-                className="text-gray-300 hover:text-white font-medium transition-colors duration-300 relative group"
+                className="text-black hover:text-gray-800 font-medium transition-colors duration-300 relative group"
               >
                 {item}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300"></span>
@@ -66,12 +66,12 @@ const Navigation = () => {
           isMobileMenuOpen ? 'max-h-screen' : 'max-h-0'
         }`}
       >
-        <div className="px-4 py-4 bg-navy-dark/98 backdrop-blur-lg space-y-2">
+        <div className="px-4 py-4 bg-blue-700/98 backdrop-blur-lg space-y-2">
           {navItems.map((item) => (
             <button
               key={item}
               onClick={() => scrollToSection(item)}
-              className="block w-full text-left px-4 py-3 text-gray-300 hover:text-white hover:bg-blue-600/20 rounded-lg transition-all duration-300"
+              className="block w-full text-left px-4 py-3 text-black hover:text-gray-800 hover:bg-blue-600/20 rounded-lg transition-all duration-300"
             >
               {item}
             </button>

@@ -15,7 +15,7 @@ const About = () => {
 
           <div>
             <h2 className="text-4xl sm:text-5xl font-bold text-navy-dark mb-6">
-              About SubliColor
+              About FastColor 
             </h2>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
               We are a professional sublimation printing company dedicated to delivering high-quality, vibrant custom jerseys and apparel. With over 5 years of experience, we've served hundreds of teams and organizations.
@@ -26,15 +26,15 @@ const About = () => {
 
             <div className="grid grid-cols-2 gap-8 mb-8">
               <div>
-                <div className="text-3xl font-bold text-blue-600 mb-2">500+</div>
-                <div className="text-gray-600">Projects Completed</div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">11+</div>
+                <div className="text-gray-600">Experience</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-blue-600 mb-2">50+</div>
                 <div className="text-gray-600">Teams Served</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-blue-600 mb-2">5 yrs</div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">11 yrs</div>
                 <div className="text-gray-600">In Business</div>
               </div>
               <div>
