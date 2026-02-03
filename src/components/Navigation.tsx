@@ -34,7 +34,7 @@ const Navigation = () => {
           <div className="flex items-center space-x-3">
             <img 
               src="/500X1500.png" 
-              alt="FastColors Logo" 
+              alt="Cricket Jersey Designs Logo" 
               className="h-12 w-auto"
             />
           </div>
@@ -47,7 +47,7 @@ const Navigation = () => {
                 className="text-black hover:text-gray-800 font-medium transition-colors duration-300 relative group"
               >
                 {item}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-500 group-hover:w-full transition-all duration-300"></span>
               </button>
             ))}
           </div>
@@ -66,12 +66,12 @@ const Navigation = () => {
           isMobileMenuOpen ? 'max-h-screen' : 'max-h-0'
         }`}
       >
-        <div className="px-4 py-4 bg-blue-700/98 backdrop-blur-lg space-y-2">
+        <div className="px-4 py-4 bg-purple-700/98 backdrop-blur-lg space-y-2">
           {navItems.map((item) => (
             <button
               key={item}
               onClick={() => scrollToSection(item)}
-              className="block w-full text-left px-4 py-3 text-black hover:text-gray-800 hover:bg-blue-600/20 rounded-lg transition-all duration-300"
+              className="block w-full text-left px-4 py-3 text-black hover:text-gray-800 hover:bg-purple-600/20 rounded-lg transition-all duration-300"
             >
               {item}
             </button>

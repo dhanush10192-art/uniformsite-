@@ -15,35 +15,35 @@ const About = () => {
 
           <div>
             <h2 className="text-4xl sm:text-5xl font-bold text-navy-dark mb-6">
-              About FastColor 
+              About Cricket Jersey Designs
             </h2>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              We are a professional sublimation printing company dedicated to delivering high-quality, vibrant custom jerseys and apparel. With over 5 years of experience, we've served hundreds of teams and organizations.
+              We are a dedicated cricket jersey design and manufacturing company committed to delivering high-quality, professional custom jerseys for cricket teams at all levels. With over 8 years of specialized cricket apparel experience, we've equipped hundreds of teams across India.
             </p>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Our commitment to excellence and customer satisfaction has made us the preferred choice for sublimation printing. We use only the finest materials and state-of-the-art printing technology to ensure every product exceeds expectations.
+              Our commitment to excellence in cricket jersey design and production has made us the preferred choice for amateur leagues, school teams, and professional franchises. We use premium breathable materials and advanced sublimation technology to ensure every jersey is comfortable, durable, and looks professional on the field.
             </p>
 
             <div className="grid grid-cols-2 gap-8 mb-8">
               <div>
-                <div className="text-3xl font-bold text-blue-600 mb-2">11+</div>
-                <div className="text-gray-600">Experience</div>
+                <div className="text-3xl font-bold text-purple-600 mb-2">8+</div>
+                <div className="text-gray-600">Cricket Focus</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-blue-600 mb-2">50+</div>
-                <div className="text-gray-600">Teams Served</div>
+                <div className="text-3xl font-bold text-purple-600 mb-2">300+</div>
+                <div className="text-gray-600">Cricket Teams</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-blue-600 mb-2">11 yrs</div>
-                <div className="text-gray-600">In Business</div>
+                <div className="text-3xl font-bold text-purple-600 mb-2">15+</div>
+                <div className="text-gray-600">States Served</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-blue-600 mb-2">100%</div>
+                <div className="text-3xl font-bold text-purple-600 mb-2">99%</div>
                 <div className="text-gray-600">Satisfaction</div>
               </div>
             </div>
 
-            <button className="px-8 py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-colors duration-300">
+            <button className="px-8 py-3 bg-purple-600 text-white font-bold rounded-lg hover:bg-purple-700 transition-colors duration-300">
               Get in Touch
             </button>
           </div>

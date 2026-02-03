@@ -11,20 +11,20 @@ const DesignIn3D = () => {
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Simple To Design - In 3D In Real Time</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Design Your Cricket Jersey - In 3D In Real Time</h2>
             <p className="text-gray-700 mb-6">
-              Choose your product, decide on a basic design and customize colors, logos and texts as desired - all in 3D and in real time.
-              Save your designs, share them with your team or order directly. Simple, fast and as individual as you are.
+              Choose your cricket jersey style, customize colors, add your team logo, player names and numbers - all in 3D and in real time.
+              Preview your final design, share it with your team, and order when you're ready. Simple, fast and completely customizable.
             </p>
 
             <ul className="space-y-3 text-gray-700 mb-6">
-              <li>• Real-time 3D preview of your design</li>
-              <li>• Change colors, add logos and edit text instantly</li>
-              <li>• Save designs and share with teammates</li>
-              <li>• Order directly from your finalized design</li>
+              <li>• Real-time 3D preview of your cricket jersey design</li>
+              <li>• Change colors, add team logos and edit player details instantly</li>
+              <li>• Save designs and share with your entire cricket team</li>
+              <li>• Order directly once your design is finalized</li>
             </ul>
 
-            <a href="#" className="inline-block px-6 py-3 bg-blue-700 text-white rounded-lg font-semibold shadow hover:bg-blue-800 transition">
+            <a href="#" className="inline-block px-6 py-3 bg-purple-700 text-white rounded-lg font-semibold shadow hover:bg-purple-800 transition">
               Learn More
             </a>
           </motion.div>

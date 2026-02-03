@@ -4,33 +4,33 @@ const Services = () => {
   const services = [
     {
       icon: Shirt,
-      title: 'Jersey Sublimation',
-      description: 'High-quality custom football jerseys with vibrant full-color sublimation printing.'
+      title: 'Custom Cricket Jerseys',
+      description: 'High-quality custom cricket jerseys with vibrant full-color sublimation printing and personalized designs.'
     },
     {
       icon: Palette,
-      title: 'T-Shirt Printing',
-      description: 'Premium sublimated t-shirts perfect for teams, events, and corporate branding.'
+      title: 'Design Customization',
+      description: 'Complete design service with team logos, player names, and numbers tailored to your cricket team.'
     },
     {
       icon: Zap,
-      title: 'Custom Sportswear',
-      description: 'Personalized athletic wear including shorts, tank tops, and performance gear.'
+      title: 'Fast Production',
+      description: 'Quick turnaround times without compromising quality. Perfect for tournament season deadlines.'
     },
     {
       icon: Users,
-      title: 'Bulk Team Orders',
-      description: 'Special pricing and dedicated support for large team and organizational orders.'
+      title: 'Team Orders',
+      description: 'Special pricing and dedicated support for cricket teams of all sizes and levels.'
     },
     {
       icon: Award,
-      title: 'Corporate Printing',
-      description: 'Professional branded apparel for corporate events and company uniforms.'
+      title: 'Premium Materials',
+      description: 'Only the finest breathable fabrics designed for comfort and performance on the cricket field.'
     },
     {
       icon: Truck,
-      title: 'Fast Delivery',
-      description: 'Quick turnaround times with reliable shipping to keep your projects on schedule.'
+      title: 'Pan-India Delivery',
+      description: 'Reliable shipping to cricket clubs and teams across India with tracking and support.'
     }
   ];
 
@@ -39,10 +39,10 @@ const Services = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-navy-dark mb-4">
-            Our Services
+            Our Cricket Jersey Services
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Comprehensive sublimation printing solutions for your every need
+            Comprehensive cricket jersey design and manufacturing solutions
           </p>
         </div>
 
@@ -54,8 +54,8 @@ const Services = () => {
                 key={index}
                 className="group bg-white border border-gray-200 rounded-lg p-8 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
               >
-                <div className="inline-flex p-4 rounded-lg bg-blue-100 mb-6 group-hover:bg-blue-600 transition-colors duration-300">
-                  <Icon className="text-blue-600 group-hover:text-white transition-colors" size={32} />
+                <div className="inline-flex p-4 rounded-lg bg-purple-100 mb-6 group-hover:bg-purple-600 transition-colors duration-300">
+                  <Icon className="text-purple-600 group-hover:text-white transition-colors" size={32} />
                 </div>
 
                 <h3 className="text-2xl font-bold text-navy-dark mb-3">
@@ -65,7 +65,7 @@ const Services = () => {
                   {service.description}
                 </p>
 
-                <div className="mt-6 flex items-center text-blue-600 font-semibold group-hover:gap-2 transition-all">
+                <div className="mt-6 flex items-center text-purple-600 font-semibold group-hover:gap-2 transition-all">
                   Learn More
                   <svg className="ml-2 w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

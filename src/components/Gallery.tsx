@@ -6,35 +6,35 @@ const Gallery = () => {
 
   const galleryItems = [
     {
-      title: 'Custom Jersey Print',
+      title: 'Custom Cricket Jersey Design',
       image: 'https://images.pexels.com/photos/3651820/pexels-photo-3651820.jpeg?auto=compress&cs=tinysrgb&w=1000'
     },
     {
-      title: 'Team Sublimation',
+      title: 'Team Cricket Jerseys',
       image: 'https://images.pexels.com/photos/3651378/pexels-photo-3651378.jpeg?auto=compress&cs=tinysrgb&w=1000'
     },
     {
-      title: 'Vibrant Colors',
+      title: 'Vibrant Cricket Colors',
       image: 'https://images.pexels.com/photos/8532616/pexels-photo-8532616.jpeg?auto=compress&cs=tinysrgb&w=1000'
     },
     {
-      title: 'Professional Design',
+      title: 'Professional Jersey Design',
       image: 'https://images.pexels.com/photos/1618200/pexels-photo-1618200.jpeg?auto=compress&cs=tinysrgb&w=1000'
     },
     {
-      title: 'Custom Graphics',
+      title: 'Custom Cricket Graphics',
       image: 'https://images.pexels.com/photos/114296/pexels-photo-114296.jpeg?auto=compress&cs=tinysrgb&w=1000'
     },
     {
-      title: 'Quality Printing',
+      title: 'Premium Jersey Quality',
       image: 'https://images.pexels.com/photos/821651/pexels-photo-821651.jpeg?auto=compress&cs=tinysrgb&w=1000'
     },
     {
-      title: 'Sports Collection',
+      title: 'Cricket Team Collection',
       image: 'https://images.pexels.com/photos/3803517/pexels-photo-3803517.jpeg?auto=compress&cs=tinysrgb&w=1000'
     },
     {
-      title: 'Team Orders',
+      title: 'Bulk Cricket Orders',
       image: 'https://images.pexels.com/photos/3651820/pexels-photo-3651820.jpeg?auto=compress&cs=tinysrgb&w=1000'
     }
   ];
@@ -44,10 +44,10 @@ const Gallery = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-navy-dark mb-4">
-            Gallery
+            Cricket Jersey Gallery
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Explore our portfolio of quality sublimation work
+            Explore our portfolio of premium cricket jersey designs
           </p>
         </div>
 

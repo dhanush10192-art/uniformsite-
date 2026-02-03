@@ -5,22 +5,22 @@ const Infrastructure = () => {
     {
       icon: Droplet,
       title: 'Sublimation Printers',
-      description: 'Professional-grade printers for vibrant, detailed color output.'
+      description: 'Professional sublimation printers for vibrant, detailed cricket jersey designs.'
     },
     {
       icon: Thermometer,
-      title: 'Heat Press Machines',
-      description: 'Advanced heat presses for perfect sublimation transfer.'
+      title: 'Heat Press Equipment',
+      description: 'Advanced heat presses for perfect sublimation transfer on cricket jerseys.'
     },
     {
       icon: Zap,
-      title: 'UV Curing System',
-      description: 'Fast-curing technology for quick production turnaround.'
+      title: 'Curing Systems',
+      description: 'Fast curing technology for quick and efficient production turnaround.'
     },
     {
       icon: Radio,
-      title: 'Quality Control',
-      description: 'State-of-the-art testing equipment for quality assurance.'
+      title: 'Quality Testing',
+      description: 'State-of-the-art testing equipment to ensure every jersey meets standards.'
     }
   ];
 
@@ -29,10 +29,10 @@ const Infrastructure = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
-            Our Infrastructure
+            Cricket Jersey Facility
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Equipped with cutting-edge sublimation technology
+            Equipped with advanced sublimation technology for premium cricket jerseys
           </p>
         </div>
 
@@ -44,8 +44,8 @@ const Infrastructure = () => {
                 key={index}
                 className="text-center group hover:transform hover:-translate-y-2 transition-all duration-300"
               >
-                <div className="inline-flex p-6 bg-blue-600/20 rounded-full mb-6 group-hover:bg-blue-600 transition-colors duration-300">
-                  <Icon className="text-blue-400 group-hover:text-white transition-colors" size={40} />
+                <div className="inline-flex p-6 bg-purple-600/20 rounded-full mb-6 group-hover:bg-purple-600 transition-colors duration-300">
+                  <Icon className="text-purple-400 group-hover:text-white transition-colors" size={40} />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">
                   {machine.title}
