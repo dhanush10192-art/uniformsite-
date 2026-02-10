@@ -44,8 +44,8 @@ const Infrastructure = () => {
                 key={index}
                 className="text-center group hover:transform hover:-translate-y-2 transition-all duration-300"
               >
-                <div className="inline-flex p-6 bg-[#BD22B8]/20 rounded-full mb-6 group-hover:bg-[#BD22B8] transition-colors duration-300">
-                  <Icon className="text-[#BD22B8] group-hover:text-white transition-colors" size={40} />
+                <div className="inline-flex p-6 bg-uniform-secondary/20 rounded-full mb-6 group-hover:bg-uniform-secondary transition-colors duration-300">
+                  <Icon className="text-uniform-secondary group-hover:text-white transition-colors" size={40} />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">
                   {machine.title}
@@ -58,7 +58,7 @@ const Infrastructure = () => {
           })}
         </div>
 
-        <div className="bg-gradient-to-r from-blue-900 to-navy-dark rounded-lg p-8 md:p-12">
+        <div className="bg-gradient-to-r from-uniform-secondary to-uniform-primary rounded-lg p-8 md:p-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-3xl font-bold text-white mb-6">
@@ -74,7 +74,7 @@ const Infrastructure = () => {
                   '24/7 production capability'
                 ].map((item, index) => (
                   <li key={index} className="flex items-center gap-3 text-gray-300">
-                    <span className="w-2 h-2 bg-blue-400 rounded-full"></span>
+                    <span className="w-2 h-2 bg-uniform-secondary rounded-full"></span>
                     {item}
                   </li>
                 ))}

@@ -6,54 +6,29 @@ const ShopByCategory = () => {
     const categories = [
         {
             id: 1,
-            title: '5-SLEEVES',
-            image: '/1.png',
+            title: 'School Uniform',
+            image: '/school.png',
         },
         {
             id: 2,
-            title: 'CUSHIONS',
-            image: '/2.png',
-        },
-        {
-            id: 3,
-            title: 'EMBROIDERY JERSEY',
-            image: '/3.jpg',
+            title: 'Sports Uniforms',
+            image: '/999.png',
         },
         {
             id: 4,
-            title: 'IMPORTED KITS',
-            image: '/4.jpg',
+            title: 'Lab Coats',
+            image: '/222.png',
         },
         {
             id: 5,
-            title: 'JACKETS',
-            image: '/5.png',
+            title: 'Scouts & Guides,NCC, RSP, Cubs & Bulbuls, Junior Red Cross',
+            image: '/news-5.jpg',
         },
         {
             id: 6,
-            title: 'KIDS',
-            image: '/6.jpg',
-        },
-        {
-            id: 7,
-            title: 'OFFER JERSEY',
-            image: '/1.png',
-        },
-        {
-            id: 8,
-            title: 'PLAYER VERSION',
-            image: '/2.png',
-        },
-        {
-            id: 9,
-            title: 'PREMIUM QUALITY',
-            image: '/3.jpg',
-        },
-        {
-            id: 10,
-            title: 'RETRO JERSEY',
-            image: '/4.jpg',
-        }
+            title: 'Teaching /Non Teaching Staff',
+            image: '/33.png',
+        },       
     ];
 
     return (
@@ -81,8 +56,8 @@ const ShopByCategory = () => {
                             className="group flex flex-col items-center cursor-pointer min-w-[100px]"
                             onClick={() => navigate('/gallery')}
                         >
-                            <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-full p-1 border-2 border-transparent group-hover:border-[#BD22B8] transition-all duration-300">
-                                <div className="w-full h-full rounded-full overflow-hidden border-4 border-[#E0C0DF]"> {/* Light purple border emulator */}
+                            <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-full p-1 border-2 border-transparent group-hover:border-uniform-secondary transition-all duration-300">
+                                <div className="w-full h-full rounded-full overflow-hidden border-4 border-blue-50"> {/* Light blue border emulator */}
                                     <img
                                         src={category.image}
                                         alt={category.title}

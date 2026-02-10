@@ -16,7 +16,7 @@ type Product = {
 };
 
 // Helper: Generate mock products
-const generateProducts = (category: 'Cricket' | 'Football', count: number): Product[] => {
+const generateProducts = (category: 'Cricket' | 'Football' | 'Uniform', count: number): Product[] => {
     const images = ['/1.png', '/2.png', '/3.jpg', '/4.jpg', '/5.png', '/6.jpg'];
     const titles = [
         'Pro Performance Jersey', 'Elite Training Kit', 'Match Day Uniform',
@@ -40,22 +40,20 @@ const generateProducts = (category: 'Cricket' | 'Football', count: number): Prod
     });
 };
 
-const cricketProducts = generateProducts('Cricket', 100);
-const footballProducts = generateProducts('Football', 100);
+const allProducts = generateProducts('Uniform', 120);
 
 const sidebarCategories = [
-    { name: 'New Products', items: [] },
-    { name: 'Special Offers', items: ['Bundle Deals', 'Clearance'] },
-    { name: "Men's", items: ['Jerseys', 'Shorts', 'Training Kits'] },
-    { name: "Women's", items: ['Jerseys', 'Activewear'] },
-    { name: 'Kids & Youth', items: ['School Kits', 'Summer Camps'] },
-    { name: 'Accessories', items: ['Caps', 'Socks', 'Bags'] },
+    { name: 'School Uniform', items: ['Primary', 'Secondary', 'PE Kits'] },
+    { name: 'Sports Uniforms', items: ['Cricket', 'Football', 'Basketball', 'Athletics'] },
+    { name: 'Lab Coats', items: ['Medical', 'Science', 'Industrial'] },
+    { name: 'Special Units', items: ['Scouts & Guides', 'NCC', 'RSP', 'Cubs & Bulbuls'] },
+    { name: 'Staff Wear', items: ['Teaching Staff', 'Non-Teaching', 'Admin'] },
 ];
 
 // --- Components ---
 
 const Sidebar = () => {
-    const [openCategories, setOpenCategories] = useState<Record<string, boolean>>({ "Men's": true });
+    const [openCategories, setOpenCategories] = useState<Record<string, boolean>>({ "Sports Uniforms": true });
     const [isMobileOpen, setIsMobileOpen] = useState(false);
 
     const toggleCategory = (name: string) => {
@@ -69,13 +67,13 @@ const Sidebar = () => {
                     onClick={() => setIsMobileOpen(!isMobileOpen)}
                     className="w-full flex items-center justify-between p-4 md:hidden font-bold text-lg bg-gray-100"
                 >
-                    <span className="flex items-center gap-2"><Filter size={20} /> Filters</span>
+                    <span className="flex items-center gap-2"><Filter size={20} /> Categories</span>
                     {isMobileOpen ? <ChevronDown size={20} /> : <ChevronRight size={20} />}
                 </button>
 
                 <div className={`p-4 md:p-0 ${isMobileOpen ? 'block' : 'hidden md:block'}`}>
                     <h3 className="font-bold text-lg mb-4 hidden md:flex items-center gap-2">
-                        <Filter size={20} /> Filters
+                        <Filter size={20} /> Filter Categories
                     </h3>
                     <ul className="space-y-1">
                         {sidebarCategories.map((cat) => (
@@ -153,14 +151,11 @@ const ProductCard = ({ product }: { product: Product }) => {
 };
 
 const GalleryPage = () => {
-    const [activeTab, setActiveTab] = useState<'cricket' | 'football'>('cricket');
     const [isScrolled, setIsScrolled] = useState(false);
 
     // Pagination State
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 12;
-
-    const allProducts = activeTab === 'cricket' ? cricketProducts : footballProducts;
 
     // Pagination Logic
     const indexOfLastItem = currentPage * itemsPerPage;
@@ -183,11 +178,6 @@ const GalleryPage = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    // Reset pagination when tab changes
-    useEffect(() => {
-        setCurrentPage(1);
-    }, [activeTab]);
-
     return (
         <div className="min-h-screen flex flex-col bg-white">
             <Navigation />
@@ -208,39 +198,18 @@ const GalleryPage = () => {
                         OUR GALLERY
                     </h1>
                     <p className="text-gray-300 text-lg md:text-xl font-light">
-                        Explore Our Premium Collections
+                        Expert Uniform & Apparel Solutions
                     </p>
                 </div>
             </div>
 
             <main className="flex-grow py-8 md:py-12 bg-white container mx-auto px-4 sm:px-6 lg:px-8">
 
-                {/* Tabs & Sort Header */}
+                {/* Info Header */}
                 <div className={`sticky top-20 z-30 bg-white/95 backdrop-blur-sm py-4 mb-8 border-b transition-all duration-300 ${isScrolled ? 'shadow-sm' : ''}`}>
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-
-                        {/* Tab Switcher */}
-                        <div className="bg-gray-100 p-1 rounded-lg inline-flex relative w-full md:w-auto">
-                            <div
-                                className={`absolute top-1 bottom-1 w-[calc(50%-4px)] rounded-md bg-white shadow-sm transition-all duration-300 ease-out`}
-                                style={{
-                                    left: activeTab === 'cricket' ? '4px' : 'calc(50%)'
-                                }}
-                            />
-                            <button
-                                onClick={() => setActiveTab('cricket')}
-                                className={`relative z-10 flex-1 px-6 py-2 text-sm font-bold transition-colors duration-300 rounded-md
-                                ${activeTab === 'cricket' ? 'text-navy-dark' : 'text-gray-500 hover:text-gray-700'}`}
-                            >
-                                CRICKET
-                            </button>
-                            <button
-                                onClick={() => setActiveTab('football')}
-                                className={`relative z-10 flex-1 px-6 py-2 text-sm font-bold transition-colors duration-300 rounded-md
-                                ${activeTab === 'football' ? 'text-navy-dark' : 'text-gray-500 hover:text-gray-700'}`}
-                            >
-                                FOOTBALL
-                            </button>
+                        <div className="text-navy-dark font-bold text-lg">
+                            ALL COLLECTIONS
                         </div>
 
                         <div className="text-gray-500 text-sm hidden md:block">

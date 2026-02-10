@@ -12,23 +12,23 @@
   }
 
   :root {
-    --navy-dark: #00006c;
-    --navy-light: #000059;
-    --blue-primary: #0066cc;
+    --navy-dark: #0a1d37;
+    --navy-light: #1e40af;
+    --blue-primary: #1e40af;
   }
 }
 
 @layer components {
   .navy-dark {
-    @apply bg-[#00006c];
+    @apply bg-[#0a1d37];
   }
 
   .text-navy-dark {
-    @apply text-[#00006c];
+    @apply text-[#0a1d37];
   }
 
   .bg-navy-dark {
-    @apply bg-[#00006c];
+    @apply bg-[#0a1d37];
   }
 }
 

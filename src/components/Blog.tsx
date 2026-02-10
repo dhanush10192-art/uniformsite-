@@ -62,7 +62,7 @@ const Blog = () => {
                   {article.excerpt}
                 </p>
 
-                <button className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
+                <button className="text-uniform-secondary font-semibold hover:text-uniform-primary transition-colors">
                   Read More →
                 </button>
               </div>

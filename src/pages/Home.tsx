@@ -1,15 +1,13 @@
 import Hero from '../components/Hero';
-import DesignIn3D from '../components/DesignIn3D';
-import { ProductShowcase } from '../components/ProductShowcase';
 import WhatWeDo from '../components/WhatWeDo';
-import CricketJerseyBanner from '../components/CricketJerseyBanner';
-import Services from '../components/Services';
+import CustomPolo from '../components/CustomPolo';
 import Gallery from '../components/Gallery';
 import ShopByCategory from '../components/ShopByCategory';
-import Infrastructure from '../components/Infrastructure';
+import CustomRoundNeck from '../components/CustomRoundNeck';
 import Blog from '../components/Blog';
 import About from '../components/About';
 import ClubCollections from '../components/ClubCollections';
+import Testimonials from '../components/Testimonials';
 
 const Home = () => {
   return (
@@ -17,24 +15,16 @@ const Home = () => {
       <Hero />
       <ClubCollections />
 
-      {/* 3D Designer Section added as requested */}
-      <DesignIn3D />
-
-      {/* Product Showcase Section */}
-      <ProductShowcase />
-
       {/* What We Do section */}
       <WhatWeDo />
 
-      {/* Cricket Jersey Banner */}
-      <CricketJerseyBanner />
-
-      <Services />
+      <CustomPolo />
       <ShopByCategory />
       <Gallery />
-      <Infrastructure />
+      <CustomRoundNeck />
       <Blog />
       <About />
+      <Testimonials />
       {/* Contact Section */}
       <section id="contact" className="py-12 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4">

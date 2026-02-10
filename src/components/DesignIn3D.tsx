@@ -24,7 +24,7 @@ const DesignIn3D = () => {
               <li>• Order directly once your design is finalized</li>
             </ul>
 
-            <a href="#" className="inline-block px-6 py-3 bg-purple-700 text-white rounded-lg font-semibold shadow hover:bg-purple-800 transition">
+            <a href="#" className="inline-block px-6 py-3 bg-uniform-secondary text-white rounded-lg font-semibold shadow hover:bg-uniform-primary transition">
               Learn More
             </a>
           </motion.div>

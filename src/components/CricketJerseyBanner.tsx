@@ -25,7 +25,7 @@ const CricketJerseyBanner = () => {
                     className="text-4xl md:text-7xl font-bold uppercase italic tracking-tighter text-white mb-2"
                     style={{ fontFamily: 'Oswald, sans-serif' }} // Assuming Oswald or similar condensed font for sports look
                 >
-                    Cricket Jerseys <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-red-600">- Own Your Game</span>
+                    Cricket Jerseys <span className="text-transparent bg-clip-text bg-gradient-to-r from-uniform-secondary to-blue-400">- Own Your Game</span>
                 </motion.h2>
 
                 <motion.p

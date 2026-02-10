@@ -9,39 +9,39 @@ const Gallery = () => {
   const galleryItems = [
     {
       id: 1,
-      title: 'Custom T-Shirt Design',
-      image: '/1.png',
-      alt: 'Custom T-Shirt Design'
+      title: 'School Uniform Set',
+      image: '/school.png',
+      alt: 'School Uniform Set'
     },
     {
       id: 2,
-      title: 'Hoodie Print Sample',
-      image: '/2.png',
-      alt: 'Hoodie Print Sample'
+      title: 'Sports Team Jersey',
+      image: '/999.png',
+      alt: 'Sports Team Jersey'
     },
     {
       id: 3,
-      title: 'Direct to Film Print',
-      image: '/3.jpg',
-      alt: 'Direct to Film Print'
+      title: 'Professional Lab Coat',
+      image: '/222.png',
+      alt: 'Professional Lab Coat'
     },
     {
       id: 4,
-      title: 'Fashion Apparel',
-      image: '/4.jpg',
-      alt: 'Fashion Apparel'
+      title: 'Scouts & Guides Uniform',
+      image: '/news-5.jpg',
+      alt: 'Scouts & Guides Uniform'
     },
     {
       id: 5,
-      title: 'Custom Design Work',
-      image: '/5.png',
-      alt: 'Custom Design Work'
+      title: 'Staff Polo Shirt',
+      image: '/33.png',
+      alt: 'Staff Polo Shirt'
     },
     {
       id: 6,
-      title: 'Print Quality Sample',
-      image: '/6.jpg',
-      alt: 'Print Quality Sample'
+      title: 'Premium Training Kit',
+      image: '/1.png',
+      alt: 'Premium Training Kit'
     }
   ];
 
@@ -53,7 +53,7 @@ const Gallery = () => {
             Our Gallery
           </h2>
           <p className="text-xl text-gray-500 max-w-2xl mx-auto">
-            Explore our collection of stunning fashion prints and custom designs
+            Explore our range of professional uniforms and custom apparel solutions
           </p>
         </div>
 
@@ -82,7 +82,7 @@ const Gallery = () => {
         <div className="flex justify-center">
           <button
             onClick={() => navigate('/gallery')}
-            className="inline-flex items-center px-8 py-3 bg-[#EE4444] text-white rounded-full font-semibold hover:bg-[#DD3333] transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+            className="inline-flex items-center px-8 py-3 bg-uniform-secondary text-white rounded-full font-semibold hover:bg-uniform-primary transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
           >
             View More
             <ArrowRight className="ml-2 w-5 h-5" />

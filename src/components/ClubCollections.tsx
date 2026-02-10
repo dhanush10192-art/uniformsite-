@@ -8,12 +8,12 @@ const ClubCollections = () => {
     const [canScrollRight, setCanScrollRight] = useState(true);
 
     const clubs = [
-        { name: 'AC MILAN', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Logo_of_AC_Milan.svg/200px-Logo_of_AC_Milan.svg.png' },
-        { name: 'AJAX', logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/7/79/Ajax_Amsterdam.svg/200px-Ajax_Amsterdam.svg.png' },
-        { name: 'ALGERIA', logo: 'Afa_gold_logo24.svg.png' },
-        { name: 'AL HILAL', logo: 'Al_Hilal_SFC_Logo.svg.png' },
-        { name: 'AL NASSR', logo: 'al_nassr_fc.png' },
-        { name: 'ARGENTINA', logo: 'Logo_of_Algeria_national_football_team_(SVG_version).svg.png' },
+        { name: 'D-MART', logo: 'D-Mart.png' },
+        { name: 'KIDS CLUB', logo: 'kc.png' },
+        { name: 'APPLE', logo: 'apple.png' },
+        { name: 'THE CHENNAI SILKS', logo: 'tcs.jpeg' },
+        { name: 'JIO', logo: 'jio.png' },
+        { name: 'CBSE', logo: 'cbse.png' },
         { name: 'ARSENAL', logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/200px-Arsenal_FC.svg.png' },
         { name: 'BARCELONA', logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/200px-FC_Barcelona_%28crest%29.svg.png' },
     ];
@@ -44,11 +44,11 @@ const ClubCollections = () => {
                 <div className="flex justify-between items-end mb-8">
                     <div>
                         <h2 className="text-2xl md:text-3xl uppercase tracking-wide">
-                            <span className="text-gray-400 font-bold">FOOTBALL CLUB</span>{' '}
+                            <span className="text-gray-400 font-bold">UNIFORM</span>{' '}
                             <span className="text-black font-bold">COLLECTIONS</span>
                         </h2>
                     </div>
-                    <button className="hidden md:block px-6 py-1.5 border border-blue-600 text-blue-600 rounded-full text-sm font-semibold hover:bg-blue-50 transition-colors">
+                    <button className="hidden md:block px-6 py-1.5 border border-uniform-secondary text-uniform-secondary rounded-full text-sm font-semibold hover:bg-uniform-secondary/5 transition-colors">
                         View All
                     </button>
                 </div>
@@ -60,7 +60,7 @@ const ClubCollections = () => {
                     {canScrollLeft && (
                         <button
                             onClick={() => scroll('left')}
-                            className="absolute left-0 top-1/2 -translate-y-[60%] -translate-x-4 md:-translate-x-12 z-10 p-2 text-blue-600 hover:text-blue-800 transition-colors bg-white/80 rounded-full shadow-lg md:shadow-none md:bg-transparent"
+                            className="absolute left-0 top-1/2 -translate-y-[60%] -translate-x-4 md:-translate-x-12 z-10 p-2 text-uniform-secondary hover:text-uniform-primary transition-colors bg-white/80 rounded-full shadow-lg md:shadow-none md:bg-transparent"
                         >
                             <ChevronLeft size={40} />
                         </button>
@@ -92,7 +92,7 @@ const ClubCollections = () => {
                                         }}
                                     />
                                 </div>
-                                <h3 className="text-blue-500 font-bold uppercase text-sm md:text-base text-center">
+                                <h3 className="text-uniform-secondary font-bold uppercase text-sm md:text-base text-center">
                                     {club.name}
                                 </h3>
                             </motion.div>
@@ -103,7 +103,7 @@ const ClubCollections = () => {
                     {canScrollRight && (
                         <button
                             onClick={() => scroll('right')}
-                            className="absolute right-0 top-1/2 -translate-y-[60%] translate-x-4 md:translate-x-12 z-10 p-2 text-blue-600 hover:text-blue-800 transition-colors bg-white/80 rounded-full shadow-lg md:shadow-none md:bg-transparent"
+                            className="absolute right-0 top-1/2 -translate-y-[60%] translate-x-4 md:translate-x-12 z-10 p-2 text-uniform-secondary hover:text-uniform-primary transition-colors bg-white/80 rounded-full shadow-lg md:shadow-none md:bg-transparent"
                         >
                             <ChevronRight size={40} />
                         </button>
@@ -113,7 +113,7 @@ const ClubCollections = () => {
 
                 {/* Pagination Dots (Visual Only for now as scroll is continuous) */}
                 <div className="flex gap-2 mt-4 ml-1">
-                    <div className="w-2.5 h-2.5 rounded-full bg-blue-600"></div>
+                    <div className="w-2.5 h-2.5 rounded-full bg-uniform-secondary"></div>
                     <div className="w-2.5 h-2.5 rounded-full bg-gray-200"></div>
                     <div className="w-2.5 h-2.5 rounded-full bg-gray-200"></div>
                 </div>

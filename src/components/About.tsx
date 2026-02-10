@@ -15,35 +15,35 @@ const About = () => {
 
           <div>
             <h2 className="text-4xl sm:text-5xl font-bold text-navy-dark mb-6">
-              About  Jersey Designs
+              About  Our Services
             </h2>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              We are a dedicated  jersey design and manufacturing company committed to delivering high-quality, professional custom jerseys for Football,cricket teams at all levels. With over 11+ years of specialized  apparel experience, we've equipped hundreds of teams across India.
+              We are a dedicated Uniforms and manufacturing company committed to delivering high-quality, professional custom jerseys for Football,cricket teams at all levels. With over 11+ years of specialized  apparel experience, we've equipped hundreds of teams across India.
             </p>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Our commitment to excellence in jersey design and production has made us the preferred choice for amateur leagues, school teams, and professional franchises. We use premium breathable materials and advanced sublimation technology to ensure every jersey is comfortable, durable, and looks professional on the field.
+              Our commitment to excellence in Uniforms design and production has made us the preferred choice for amateur leagues, school teams, and professional franchises. We use premium breathable materials and advanced sublimation technology to ensure every jersey is comfortable, durable, and looks professional on the field.
             </p>
 
             <div className="grid grid-cols-2 gap-8 mb-8">
               <div>
-                <div className="text-3xl font-bold text-purple-600 mb-2">11+</div>
-                <div className="text-gray-600">Jersey Focus</div>
+                <div className="text-3xl font-bold text-uniform-secondary mb-2">11+</div>
+                <div className="text-gray-600">Uniforms Focus</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-purple-600 mb-2">1000+</div>
+                <div className="text-3xl font-bold text-uniform-secondary mb-2">1000+</div>
                 <div className="text-gray-600">1000+ Teams</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-purple-600 mb-2">15+</div>
+                <div className="text-3xl font-bold text-uniform-secondary mb-2">99+</div>
                 <div className="text-gray-600">States Served</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-purple-600 mb-2">99%</div>
+                <div className="text-3xl font-bold text-uniform-secondary mb-2">99%</div>
                 <div className="text-gray-600">Satisfaction</div>
               </div>
             </div>
 
-            <button className="px-8 py-3 bg-purple-600 text-white font-bold rounded-lg hover:bg-purple-700 transition-colors duration-300">
+            <button className="px-8 py-3 bg-uniform-secondary text-white font-bold rounded-lg hover:bg-uniform-primary transition-colors duration-300">
               Get in Touch
             </button>
           </div>

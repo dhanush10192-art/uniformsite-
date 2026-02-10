@@ -90,7 +90,7 @@ export const ProductShowcase = () => {
             {/* 1. Header & Categories */}
             <div className="max-w-7xl mx-auto px-4 flex flex-col items-center mb-10 md:mb-16">
                 <h2 className="text-4xl md:text-6xl font-bold text-center mb-10 md:mb-14 leading-tight">
-                    130+ <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-pink-500 to-blue-500">products</span>
+                    130+ <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-600 to-navy-dark">products</span>
                     <br />
                     to unveil your designs.
                 </h2>
@@ -100,7 +100,7 @@ export const ProductShowcase = () => {
                         {categories.map((cat, idx) => (
                             <div key={idx} className="flex flex-col items-center gap-3 cursor-pointer group min-w-[80px]">
                                 <div className="w-12 h-12 md:w-14 md:h-14 rounded-full border border-gray-700 flex items-center justify-center group-hover:border-white transition-colors duration-300 bg-gray-900 md:bg-transparent text-gray-400 group-hover:text-white">
-                                    <cat.icon className={`w-5 h-5 md:w-6 md:h-6 ${idx === 0 ? 'text-blue-500' : ''}`} />
+                                    <cat.icon className={`w-5 h-5 md:w-6 md:h-6 ${idx === 0 ? 'text-uniform-secondary' : ''}`} />
                                 </div>
                                 <span className="text-[10px] md:text-xs text-center text-gray-400 uppercase tracking-wide group-hover:text-white transition-colors whitespace-nowrap">
                                     {cat.name}
