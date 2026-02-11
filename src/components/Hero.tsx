@@ -5,8 +5,8 @@ const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const jerseyImages = [
-    'main2.jpg',
-    'mainunifrom.jpg',
+    '2211.jpg',
+    '3311.jpg',
     '3images.png'
   ];
 
@@ -91,7 +91,7 @@ const Hero = () => {
             </button>
 
             {/* Card Slider */}
-            <div className="relative h-[400px] md:h-[500px] w-full rounded-3xl overflow-hidden shadow-2xl">
+            <div className="relative h-[400px] md:h-[500px] w-full rounded-3xl overflow-hidden">
               {jerseyImages.map((img, index) => (
                 <div
                   key={index}
@@ -105,7 +105,7 @@ const Hero = () => {
                   />
 
                   {/* Dark Gradient Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
+                  {/* <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div> */}
 
                   {/* Content */}
                   <div className="absolute inset-0 flex flex-col justify-center px-8 md:px-16 max-w-2xl text-white">
@@ -155,8 +155,8 @@ const Hero = () => {
               <div className="flex items-center gap-4 border-b md:border-b-0 md:border-r border-blue-800 pb-4 md:pb-0 last:border-0">
                 <Truck size={40} className="text-white flex-shrink-0" strokeWidth={1.5} />
                 <div>
-                  <h3 className="font-bold text-lg uppercase">Free Delivery</h3>
-                  <p className="text-blue-200 text-xs uppercase tracking-wide">All over India above Rs.999</p>
+                  <h3 className="font-bold text-lg uppercase">Fast Delivery</h3>
+                  <p className="text-blue-200 text-xs uppercase tracking-wide">All over India Delivery</p>
                 </div>
               </div>
 

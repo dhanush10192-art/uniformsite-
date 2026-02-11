@@ -5,7 +5,7 @@ import { Quote, Star, ChevronLeft, ChevronRight } from 'lucide-react';
 const testimonials = [
     {
         id: 1,
-        name: 'Emily R.',
+        name: 'RATHI D',
         role: 'Mixed Apparel x 100',
         content: '"Started my small merch business with their prints. The quality helps me charge premium prices. Highly recommend!"',
         rating: 5,
@@ -13,7 +13,7 @@ const testimonials = [
     },
     {
         id: 2,
-        name: 'Michael T.',
+        name: 'DHANUSH R',
         role: 'Cricket Club Captain',
         content: '"The uniforms are breathable and durable. Our team feels like pros on the field. The design process was seamless."',
         rating: 5,
@@ -21,7 +21,7 @@ const testimonials = [
     },
     {
         id: 3,
-        name: 'Sarah L.',
+        name: 'PRIYA M',
         role: 'School Principal',
         content: '"Consistently high quality for our school uniforms. Delivery is always on time and the prices are very competitive."',
         rating: 5,

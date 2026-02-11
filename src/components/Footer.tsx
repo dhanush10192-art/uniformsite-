@@ -4,9 +4,9 @@ const Footer = () => {
   const quickLinks = ['Home', 'Services', 'Gallery', 'Infrastructure', 'Blog', 'About', 'Pricing'];
   const services = ['Jersey Sublimation', 'T-Shirt Printing', 'Custom Sportswear', 'Bulk Team Orders'];
   const socialLinks = [
-    { icon: Facebook, href: '#' },
+    { icon: Facebook, href: 'https://www.facebook.com/p/Fastcolors-61566794944064/' },
     { icon: Twitter, href: '#' },
-    { icon: Instagram, href: '#' },
+    { icon: Instagram, href: 'https://www.instagram.com/fastcolorsretail/' },
     { icon: Linkedin, href: '#' }
   ];
 
@@ -17,12 +17,16 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">ST</span>
+                <img
+              src="/500X1500.png"
+              alt="Cricket Jersey Designs Logo"
+              className="h-12 w-auto"
+            />
               </div>
               <span className="text-white font-bold text-lg">FastColors</span>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Premium sublimation printing for custom jerseys and apparel. Quality, speed, and excellence in every print.
+                Fast Colors delivers premium custom uniforms with vibrant sublimation prints, durable fabrics, precise stitching, quick turnaround, personalized designs, reliable quality, and comfortable fits for every team.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social, index) => {

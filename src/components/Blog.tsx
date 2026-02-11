@@ -1,27 +1,8 @@
 import { Calendar } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { blogData } from '../data/blogData';
 
 const Blog = () => {
-  const articles = [
-    {
-      title: 'Cricket Jersey Design Tips for Teams',
-      date: 'Feb 1, 2026',
-      excerpt: 'Essential tips for designing professional and eye-catching cricket jerseys for your team.',
-      image: 'https://images.pexels.com/photos/1367192/pexels-photo-1367192.jpeg?auto=compress&cs=tinysrgb&w=800'
-    },
-    {
-      title: 'How to Choose Perfect Cricket Jersey Colors',
-      date: 'Jan 28, 2026',
-      excerpt: 'A guide to selecting colors and designs that represent your cricket team brand.',
-      image: 'https://images.pexels.com/photos/3803517/pexels-photo-3803517.jpeg?auto=compress&cs=tinysrgb&w=800'
-    },
-    {
-      title: 'Maintaining Your Cricket Jerseys',
-      date: 'Jan 20, 2026',
-      excerpt: 'Best practices for maintaining and caring for premium cricket jerseys.',
-      image: 'https://images.pexels.com/photos/4239031/pexels-photo-4239031.jpeg?auto=compress&cs=tinysrgb&w=800'
-    }
-  ];
-
   return (
     <section id="blog" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -30,15 +11,16 @@ const Blog = () => {
             Blog
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Latest insights and tips on cricket jersey design and care
+            Latest insights and tips on Uniforms design and care
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {articles.map((article, index) => (
-            <div
-              key={index}
-              className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+          {blogData.map((article) => (
+            <Link
+              key={article.id}
+              to={`/blog/${article.id}`}
+              className="group bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1 block"
             >
               <div className="relative h-48 overflow-hidden">
                 <img
@@ -54,7 +36,7 @@ const Blog = () => {
                   <span>{article.date}</span>
                 </div>
 
-                <h3 className="text-xl font-bold text-navy-dark mb-3">
+                <h3 className="text-xl font-bold text-navy-dark mb-3 group-hover:text-uniform-secondary transition-colors">
                   {article.title}
                 </h3>
 
@@ -62,11 +44,11 @@ const Blog = () => {
                   {article.excerpt}
                 </p>
 
-                <button className="text-uniform-secondary font-semibold hover:text-uniform-primary transition-colors">
+                <span className="text-uniform-secondary font-semibold group-hover:text-uniform-primary transition-colors inline-flex items-center">
                   Read More →
-                </button>
+                </span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

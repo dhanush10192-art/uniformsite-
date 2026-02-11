@@ -6,14 +6,12 @@ import ShopByCategory from '../components/ShopByCategory';
 import CustomRoundNeck from '../components/CustomRoundNeck';
 import Blog from '../components/Blog';
 import About from '../components/About';
-import ClubCollections from '../components/ClubCollections';
 import Testimonials from '../components/Testimonials';
 
 const Home = () => {
   return (
     <main className="pt-20">
       <Hero />
-      <ClubCollections />
 
       {/* What We Do section */}
       <WhatWeDo />

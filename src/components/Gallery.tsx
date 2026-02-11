@@ -1,48 +1,20 @@
-import { useState } from 'react';
-import { X, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 const Gallery = () => {
-  const [selectedImage, setSelectedImage] = useState<number | null>(null);
   const navigate = useNavigate();
 
   const galleryItems = [
-    {
-      id: 1,
-      title: 'School Uniform Set',
-      image: '/school.png',
-      alt: 'School Uniform Set'
-    },
-    {
-      id: 2,
-      title: 'Sports Team Jersey',
-      image: '/999.png',
-      alt: 'Sports Team Jersey'
-    },
-    {
-      id: 3,
-      title: 'Professional Lab Coat',
-      image: '/222.png',
-      alt: 'Professional Lab Coat'
-    },
-    {
-      id: 4,
-      title: 'Scouts & Guides Uniform',
-      image: '/news-5.jpg',
-      alt: 'Scouts & Guides Uniform'
-    },
-    {
-      id: 5,
-      title: 'Staff Polo Shirt',
-      image: '/33.png',
-      alt: 'Staff Polo Shirt'
-    },
-    {
-      id: 6,
-      title: 'Premium Training Kit',
-      image: '/1.png',
-      alt: 'Premium Training Kit'
-    }
+    { id: 1, title: 'Boys Collection', image: '/001.jpg', alt: 'Boys Collection' },
+    { id: 2, title: 'Boys Collection', image: '/002.jpg', alt: 'Boys Collection' },
+    { id: 3, title: 'Boys Collection', image: '/003.jpg', alt: 'Boys Collection' },
+    { id: 4, title: 'Girls Collection', image: '/004.jpg', alt: 'Girls Collection' },
+    { id: 5, title: 'Girls Collection', image: '/005.jpg', alt: 'Girls Collection' },
+    { id: 6, title: 'Girls Collection', image: '/006.jpg', alt: 'Girls Collection' },
+    { id: 7, title: 'Sports Uniform', image: '/007.jpg', alt: 'Sports Uniform' },
+    { id: 8, title: 'Sports Uniform', image: '/008.jpg', alt: 'Sports Uniform' },
+    { id: 9, title: 'Sports Uniform', image: '/003.jpg', alt: 'Sports Uniform' },
+    { id: 9, title: 'Sports Uniform', image: '/008.jpg', alt: 'Sports Uniform' },
   ];
 
   return (
@@ -58,11 +30,10 @@ const Gallery = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {galleryItems.map((item, index) => (
+          {galleryItems.map((item) => (
             <div
               key={item.id}
-              onClick={() => setSelectedImage(index)}
-              className="group cursor-pointer relative overflow-hidden rounded-2xl h-64 shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="group relative overflow-hidden rounded-2xl h-64 shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
               <img
                 src={item.image}
@@ -89,31 +60,6 @@ const Gallery = () => {
           </button>
         </div>
       </div>
-
-      {selectedImage !== null && (
-        <div
-          className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-4 backdrop-blur-sm"
-          onClick={() => setSelectedImage(null)}
-        >
-          <div className="relative max-w-5xl w-full">
-            <button
-              onClick={() => setSelectedImage(null)}
-              className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors bg-white/10 p-2 rounded-full hover:bg-white/20"
-            >
-              <X size={24} />
-            </button>
-            <img
-              src={galleryItems[selectedImage].image}
-              alt={galleryItems[selectedImage].alt}
-              className="w-full h-auto max-h-[85vh] object-contain rounded-lg shadow-2xl"
-              onClick={(e) => e.stopPropagation()}
-            />
-            <p className="text-white text-center mt-4 text-xl font-medium tracking-wide">
-              {galleryItems[selectedImage].title}
-            </p>
-          </div>
-        </div>
-      )}
     </section>
   );
 };

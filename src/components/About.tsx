@@ -17,28 +17,28 @@ const About = () => {
             <h2 className="text-4xl sm:text-5xl font-bold text-navy-dark mb-6">
               About  Our Services
             </h2>
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              We are a dedicated Uniforms and manufacturing company committed to delivering high-quality, professional custom jerseys for Football,cricket teams at all levels. With over 11+ years of specialized  apparel experience, we've equipped hundreds of teams across India.
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed font-bold">
+              Fast Colors is a dedicated uniforms manufacturing company delivering high-quality, professional custom jerseys for football and cricket teams at every level. With over 11 years of specialized apparel experience, we have equipped hundreds of teams across India.
             </p>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Our commitment to excellence in Uniforms design and production has made us the preferred choice for amateur leagues, school teams, and professional franchises. We use premium breathable materials and advanced sublimation technology to ensure every jersey is comfortable, durable, and looks professional on the field.
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed font-bold">
+              Our commitment to excellence in Uniforms design and production has made us the preferred choice for amateur leagues, school teams, and professional franchises. We use premium breathable materials and advanced sublimation technology to ensure every Uniform is comfortable, durable, and looks professional on the field.
             </p>
 
             <div className="grid grid-cols-2 gap-8 mb-8">
               <div>
-                <div className="text-3xl font-bold text-uniform-secondary mb-2">11+</div>
+                <div className="text-3xl font-bold text-uniform-secondary mb-2">100+</div>
                 <div className="text-gray-600">Uniforms Focus</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-uniform-secondary mb-2">1000+</div>
+                <div className="text-3xl font-bold text-uniform-secondary mb-2">50000+</div>
                 <div className="text-gray-600">1000+ Teams</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-uniform-secondary mb-2">99+</div>
+                <div className="text-3xl font-bold text-uniform-secondary mb-2">12 +</div>
                 <div className="text-gray-600">States Served</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-uniform-secondary mb-2">99%</div>
+                <div className="text-3xl font-bold text-uniform-secondary mb-2">100%</div>
                 <div className="text-gray-600">Satisfaction</div>
               </div>
             </div>

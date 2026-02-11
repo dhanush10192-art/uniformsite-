@@ -15,50 +15,28 @@ type Product = {
     badge?: string;
 };
 
-// Helper: Generate mock products
-const generateProducts = (category: 'Cricket' | 'Football' | 'Uniform', count: number): Product[] => {
-    const images = ['/1.png', '/2.png', '/3.jpg', '/4.jpg', '/5.png', '/6.jpg'];
-    const titles = [
-        'Pro Performance Jersey', 'Elite Training Kit', 'Match Day Uniform',
-        'Fan Edition Tee', 'Club Merchandise', 'Sublimated Sportswear',
-        'Tournament Gear', 'Practice Vest', 'Team Warmup Jacket', 'Custom Player Kit'
-    ];
-
-    return Array.from({ length: count }, (_, i) => {
-        const imgIndex = i % images.length;
-        const titleIndex = i % titles.length;
-        const price = 499 + Math.floor(Math.random() * 1500); // Random price between 499 and 1999
-
-        return {
-            id: category === 'Cricket' ? i + 1 : i + 1001,
-            title: `${category} ${titles[titleIndex]} ${Math.floor(i / 10) + 1}`,
-            sku: `${category.substring(0, 3).toUpperCase()}-${1000 + i}`,
-            price: `₹${price}`,
-            image: images[imgIndex],
-            badge: i % 15 === 0 ? 'New' : (i % 23 === 0 ? 'Sale' : undefined)
-        };
-    });
-};
-
-const allProducts = generateProducts('Uniform', 120);
+const allProducts: Product[] = [
+    { id: 1, title: 'Boys Collection', sku: 'BC-001', price: '₹799', image: '/001.jpg' },
+    { id: 2, title: 'Boys Collection', sku: 'BC-002', price: '₹799', image: '/002.jpg' },
+    { id: 3, title: 'Boys Collection', sku: 'BC-003', price: '₹799', image: '/003.jpg' },
+    { id: 4, title: 'Girls Collection', sku: 'GC-004', price: '₹799', image: '/004.jpg' },
+    { id: 5, title: 'Girls Collection', sku: 'GC-005', price: '₹799', image: '/005.jpg' },
+    { id: 6, title: 'Girls Collection', sku: 'GC-006', price: '₹799', image: '/006.jpg' },
+    { id: 7, title: 'Sports Uniform', sku: 'SU-007', price: '₹899', image: '/007.jpg' },
+    { id: 8, title: 'Sports Uniform', sku: 'SU-008', price: '₹899', image: '/008.jpg' },
+    { id: 9, title: 'Sports Uniform', sku: 'SU-009', price: '₹899', image: '/009.jpg' },
+];
 
 const sidebarCategories = [
-    { name: 'School Uniform', items: ['Primary', 'Secondary', 'PE Kits'] },
-    { name: 'Sports Uniforms', items: ['Cricket', 'Football', 'Basketball', 'Athletics'] },
-    { name: 'Lab Coats', items: ['Medical', 'Science', 'Industrial'] },
-    { name: 'Special Units', items: ['Scouts & Guides', 'NCC', 'RSP', 'Cubs & Bulbuls'] },
-    { name: 'Staff Wear', items: ['Teaching Staff', 'Non-Teaching', 'Admin'] },
+    { name: 'Boys Collection', items: [] },
+    { name: 'Girls Collection', items: [] },
+    { name: 'Sports Uniform', items: [] },
 ];
 
 // --- Components ---
 
 const Sidebar = () => {
-    const [openCategories, setOpenCategories] = useState<Record<string, boolean>>({ "Sports Uniforms": true });
     const [isMobileOpen, setIsMobileOpen] = useState(false);
-
-    const toggleCategory = (name: string) => {
-        setOpenCategories(prev => ({ ...prev, [name]: !prev[name] }));
-    };
 
     return (
         <aside className="w-full md:w-64 flex-shrink-0 mb-8 md:mb-0">
@@ -79,31 +57,10 @@ const Sidebar = () => {
                         {sidebarCategories.map((cat) => (
                             <li key={cat.name} className="border-b border-gray-100 last:border-0">
                                 <button
-                                    onClick={() => toggleCategory(cat.name)}
-                                    className="w-full flex items-center justify-between py-2 md:py-3 text-left hover:text-blue-600 transition-colors group"
+                                    className="w-full py-2 md:py-3 text-left hover:text-blue-600 transition-colors group font-medium text-sm md:text-base text-gray-700"
                                 >
-                                    <span className={`font-medium text-sm md:text-base ${openCategories[cat.name] ? 'text-blue-600' : 'text-gray-700'}`}>
-                                        {cat.name}
-                                    </span>
-                                    {cat.items.length > 0 && (
-                                        openCategories[cat.name] ?
-                                            <ChevronDown size={16} className="text-gray-400 group-hover:text-blue-600" /> :
-                                            <ChevronRight size={16} className="text-gray-400 group-hover:text-blue-600" />
-                                    )}
+                                    {cat.name}
                                 </button>
-
-                                {/* Submenu */}
-                                {cat.items.length > 0 && openCategories[cat.name] && (
-                                    <ul className="pl-4 pb-2 space-y-1 md:space-y-2 animate-fadeIn">
-                                        {cat.items.map((item) => (
-                                            <li key={item}>
-                                                <a href="#" className="text-xs md:text-sm text-gray-500 hover:text-blue-500 block py-1">
-                                                    {item}
-                                                </a>
-                                            </li>
-                                        ))}
-                                    </ul>
-                                )}
                             </li>
                         ))}
                     </ul>
@@ -139,11 +96,6 @@ const ProductCard = ({ product }: { product: Product }) => {
                 </h3>
                 <div className="text-[10px] md:text-xs text-gray-400 mb-2 md:mb-3 uppercase tracking-wider">
                     {product.sku}
-                </div>
-                <div className="mt-auto flex items-center justify-between">
-                    <button className="text-xs md:text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors uppercase tracking-wide">
-                        View Details
-                    </button>
                 </div>
             </div>
         </div>
