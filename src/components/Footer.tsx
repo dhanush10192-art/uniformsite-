@@ -18,15 +18,15 @@ const Footer = () => {
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg flex items-center justify-center">
                 <img
-              src="/500X1500.png"
-              alt="Cricket Jersey Designs Logo"
-              className="h-12 w-auto"
-            />
+                  src="/500X1500.png"
+                  alt="Cricket Jersey Designs Logo"
+                  className="h-12 w-auto"
+                />
               </div>
-              <span className="text-white font-bold text-lg">FastColors</span>
+              <span className="text-white font-bold text-lg">Fast Colour</span>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
-                Fast Colors delivers premium custom uniforms with vibrant sublimation prints, durable fabrics, precise stitching, quick turnaround, personalized designs, reliable quality, and comfortable fits for every team.
+              Fast Colour delivers premium custom uniforms with vibrant sublimation prints, durable fabrics, precise stitching, quick turnaround, personalized designs, reliable quality, and comfortable fits for every team.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social, index) => {
@@ -102,7 +102,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm">
-              &copy; 2024 Fastcolor. All rights reserved.
+              &copy; 2024 Fast Colour. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
               <a href="#" className="hover:text-blue-400 transition-colors">Privacy Policy</a>

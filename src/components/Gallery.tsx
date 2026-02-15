@@ -6,15 +6,8 @@ const Gallery = () => {
 
   const galleryItems = [
     { id: 1, title: 'Boys Collection', image: '/001.jpg', alt: 'Boys Collection' },
-    { id: 2, title: 'Boys Collection', image: '/002.jpg', alt: 'Boys Collection' },
-    { id: 3, title: 'Boys Collection', image: '/003.jpg', alt: 'Boys Collection' },
     { id: 4, title: 'Girls Collection', image: '/004.jpg', alt: 'Girls Collection' },
-    { id: 5, title: 'Girls Collection', image: '/005.jpg', alt: 'Girls Collection' },
-    { id: 6, title: 'Girls Collection', image: '/006.jpg', alt: 'Girls Collection' },
     { id: 7, title: 'Sports Uniform', image: '/007.jpg', alt: 'Sports Uniform' },
-    { id: 8, title: 'Sports Uniform', image: '/008.jpg', alt: 'Sports Uniform' },
-    { id: 9, title: 'Sports Uniform', image: '/003.jpg', alt: 'Sports Uniform' },
-    { id: 9, title: 'Sports Uniform', image: '/008.jpg', alt: 'Sports Uniform' },
   ];
 
   return (
@@ -30,19 +23,22 @@ const Gallery = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {galleryItems.map((item) => (
+          {galleryItems.map((item, index) => (
             <div
-              key={item.id}
-              className="group relative overflow-hidden rounded-2xl h-64 shadow-lg hover:shadow-xl transition-shadow duration-300"
+              key={index}
+              className="group relative overflow-hidden rounded-2xl h-64 shadow-md hover:shadow-xl transition-all duration-500"
             >
               <img
                 src={item.image}
                 alt={item.alt}
-                className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out"
               />
-              <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
-              <div className="absolute bottom-4 left-4 right-4">
-                <h3 className="text-white text-lg font-bold tracking-wide">
+              {/* Overlay Branding */}
+              <div className="absolute top-4 left-4 z-10">
+                <span className="text-white/30 font-bold text-xs tracking-tighter">FAST COLOUR.</span>
+              </div>
+              <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                <h3 className="text-white text-lg font-bold tracking-tight">
                   {item.title}
                 </h3>
               </div>

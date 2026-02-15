@@ -16,7 +16,7 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navItems = ['Home', 'Services', 'Gallery', 'Infrastructure', 'Blog', 'About'];
+  const navItems = ['Home', 'Services', 'Gallery', 'Blog', 'About'];
 
   const scrollToSection = (sectionId: string) => {
     setIsMobileMenuOpen(false);
@@ -74,7 +74,7 @@ const Navigation = () => {
               alt="Cricket Jersey Designs Logo"
               className="h-12 w-auto"
             />
-            <span className="sr-only">FastColors Sublimation</span>
+            <span className="sr-only">Fast Colour Sublimation</span>
           </button>
 
           <div className="hidden md:flex space-x-8">

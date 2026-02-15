@@ -60,9 +60,14 @@ const Hero = () => {
               Of Your Life.
             </h1>
             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-              <button className="bg-white text-[#0a1d37] hover:bg-gray-100 text-lg font-bold py-3 md:py-4 px-8 md:px-12 rounded transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105">
+              <a
+                href="https://wa.me/917812865788"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-[#0a1d37] hover:bg-gray-100 text-lg font-bold py-3 md:py-4 px-8 md:px-12 rounded transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
+              >
                 Explore Collection
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -91,7 +96,7 @@ const Hero = () => {
             </button>
 
             {/* Card Slider */}
-            <div className="relative h-[400px] md:h-[500px] w-full rounded-3xl overflow-hidden">
+            <div className="relative h-[250px] sm:h-[400px] md:h-[500px] w-full rounded-3xl overflow-hidden">
               {jerseyImages.map((img, index) => (
                 <div
                   key={index}
@@ -100,7 +105,7 @@ const Hero = () => {
                 >
                   {/* Background Image */}
                   <div
-                    className="absolute inset-0 bg-cover bg-center"
+                    className="absolute inset-0 bg-cover bg-[center_left] sm:bg-center"
                     style={{ backgroundImage: `url(${img})` }}
                   />
 

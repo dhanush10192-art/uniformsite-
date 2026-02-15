@@ -18,7 +18,7 @@ const About = () => {
               About  Our Services
             </h2>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed font-bold">
-              Fast Colors is a dedicated uniforms manufacturing company delivering high-quality, professional custom jerseys for football and cricket teams at every level. With over 11 years of specialized apparel experience, we have equipped hundreds of teams across India.
+              Fast Colour is a dedicated uniforms manufacturing company delivering high-quality, professional custom jerseys for football and cricket teams at every level. With over 11 years of specialized apparel experience, we have equipped hundreds of teams across India.
             </p>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed font-bold">
               Our commitment to excellence in Uniforms design and production has made us the preferred choice for amateur leagues, school teams, and professional franchises. We use premium breathable materials and advanced sublimation technology to ensure every Uniform is comfortable, durable, and looks professional on the field.
@@ -43,9 +43,14 @@ const About = () => {
               </div>
             </div>
 
-            <button className="px-8 py-3 bg-uniform-secondary text-white font-bold rounded-lg hover:bg-uniform-primary transition-colors duration-300">
+            <a
+              href="https://wa.me/917812865788"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-8 py-3 bg-uniform-secondary text-white font-bold rounded-lg hover:bg-uniform-primary transition-colors duration-300"
+            >
               Get in Touch
-            </button>
+            </a>
           </div>
         </div>
       </div>

@@ -20,31 +20,31 @@ const WhatWeDo = () => {
         <div className="mt-8 grid gap-6">
           <div className="grid md:grid-cols-3 gap-6 items-center">
             <img
-              src="/5.png"
+              src="/9001.jpg"
               alt="Cricket jersey design left"
-              className="w-full h-48 object-cover rounded-lg hidden md:block"
+              className="w-full h-50 object-cover rounded-lg hidden md:block"
             />
 
             <img
-              src="/3.jpg"
+              src="/7001.jpg"
               alt="Jersey production facility"
-              className="w-full h-64 object-cover rounded-lg"
+              className="w-100% h-100  object-cover rounded-lg"
             />
 
             <img
-              src="/1.png"
+              src="/dkdk.jpg"
               alt="Cricket jersey design right"
-              className="w-full h-48 object-cover rounded-lg hidden md:block"
+              className="w-full h-75 object-cover rounded-lg hidden md:block"
             />
           </div>
 
-          <div>
+          {/* <div>
             <img
-              src="/2.png"
+              src="/"
               alt="Premium cricket jersey fabric"
-              className="w-full h-48 md:h-64 object-cover rounded-lg"
+              className="w-100% h-48 md:h-64 object-cover rounded-lg"
             />
-          </div>
+          </div> */}
 
           <div className="flex justify-center">
             <a href="#about" className="px-6 py-3 bg-uniform-secondary text-white rounded-lg font-semibold shadow hover:bg-uniform-primary transition">Learn more</a>
